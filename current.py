@@ -1,12 +1,19 @@
 string = raw_input()
-string2 = raw_input()
-x=0
-a=0
-n=len(string)-len(string2)+1
-b=n
-for i in range(0, n):
-	if string.find(string2,i,i+len(string2))!=-1:
-		x+=1
-	a+=1
-	b+=1
-print x
+l=list(string)
+a,b,c,d,e=False,False,False,False,False
+for i in l:
+	if i.isalnum():
+		a=True
+	if i.isalpha():
+		b=True
+	if i.isdigit():
+		c=True
+	if i.islower():
+		d=True
+	if i.isupper():
+		e=True
+print a
+print b
+print c
+print d
+print e
