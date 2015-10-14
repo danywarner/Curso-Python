@@ -1,0 +1,5 @@
+N=raw_input()
+arr=raw_input().split(' ')
+arr2=map(int,arr)
+tup=tuple(arr2)
+print hash(tup)
